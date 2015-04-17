@@ -1,0 +1,17 @@
+[user]
+	name = Jerome Tremblay
+	email = $EMAIL
+[alias]
+        st = status
+        df = diff
+        aa = add -A
+        oneline = log --pretty=oneline --abbrev-commit --graph --decorate
+        lc = !git oneline ORIG_HEAD.. --stat --no-merges
+        ci = commit
+        co = checkout
+        b = branch -a
+
+[color]
+	ui = auto
+[core]
+	editor = vi
