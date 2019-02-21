@@ -1,0 +1,16 @@
+# Additional configuration
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+export PS1="\[\e[00;33m\]\u\[\e[0m\]\[\e[00;37m\]@\h:\[\e[0m\]\[\e[00;36m\][\w]\n$\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
+
+h(){
+        history | grep $1
+}
+
+findg(){
+        find . | grep $1
+}
