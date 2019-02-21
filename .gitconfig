@@ -8,10 +8,15 @@
         oneline = log --pretty=oneline --abbrev-commit --graph --decorate
         lc = !git oneline ORIG_HEAD.. --stat --no-merges
         ci = commit
+        lg =  log --graph --pretty=format:'%C(bold white red)%h%Creset -%C(bold white yellow)%d%Creset %s %C(bold white green)(%cr) %C(bold white red)<%an>%Creset' --abbrev-commit --date=relative
         co = checkout
         b = branch -a
 
 [color]
 	ui = auto
+	diff = auto
+	status = auto
 [core]
 	editor = vi
+[push]
+	default = current
